@@ -1,0 +1,228 @@
+@use '..//scss/index' as *;
+$tablet: 800px;
+$desktop: 1100px;
+    
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: $font-family;
+}
+
+%display-flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container{
+    @extend %display-flexbox;
+    height: auto;
+    width: 100%;
+    color: white;
+    .header-title{
+        color: $dark;
+        font-family: $font-family;
+        font-size: 2.5vh;
+        margin: 10px 0px;
+    }
+
+}
+
+
+.banner-header-container{
+    width: 100%;
+    height: 100%;
+
+    
+        .banner-jordan{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 800px;
+            max-height: 45vh;
+            background-image: url('../image/image-michael-jordan.png');
+            background-size: 190%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            transition: 1s;
+            text-align: left;
+
+            img{
+                    position: relative;
+                        bottom: 30px;
+                width: 10em;
+                padding: 10px;
+                margin-left: 20px;
+            }
+            h1{
+                font-size: 1.4em;
+                padding: 5px;
+                margin-left: 20px;
+                font-weight: 400;
+
+            }
+            p{
+                font-size: 1em;
+                padding: 5px;
+                margin-left: 20px;
+                line-height: 25px;
+
+            }
+        }
+    @media screen and (min-width: $desktop){
+        .banner-jordan{
+            width: 100%;
+            height: 800px;
+            max-height: 49vh;
+            background-image: url('../image/image-michael-jordan.png');
+            background-size: 100%;
+            background-position: center top 2px;
+            transition: 1s;
+            .content-header{
+                width: 600px;
+                margin-left: 15%;
+                margin-top: 5%;
+
+
+            }
+
+            img {
+                    position: relative;
+                    bottom: 30px;
+                    width: 15em;
+                    padding: 10px;
+                    margin-left: 20px;
+                }
+            h1 {
+                    font-size: 3.4em;
+                    padding: 5px;
+                    margin-left: 20px;
+                    font-weight: 400;
+            
+                }
+            
+            p {
+                font-size: 1.5em;
+                padding: 5px;
+                margin-left: 20px;
+                line-height: 25px;
+        
+            }
+        }
+    }
+}
+
+.content-header{
+    position: relative;
+    bottom: 5px;
+    width: 80%;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: black;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+
+    .apresentacao{
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        margin: 20px
+    }
+
+    .produtos {
+        @extend %display-flexbox;
+
+        .produto{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            img{
+                width: 50%;
+                background-color: $gray;
+            }
+        }
+
+        p{
+            color: $brand-color;
+        }
+
+        span{
+            font-weight: bold;
+        }
+    }
+
+    
+        .produtos{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .produto {
+                width: 50%;
+            }
+        }
+
+
+    @media screen and (min-width: $desktop) {
+        .apresentacao{
+
+            gap: 40px;
+            h1{
+                font-size: 2em;
+            }
+            p{
+                padding: 5px;
+                font-size: 1.6em;
+                width: 35%;
+                align-self: center;
+            }
+        }
+
+        .produtos {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .produto {
+                width: 33%;
+            }
+        }
+
+}
+
+.descri-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+    background-color: $dark;
+    color: $white;
+    height: 40px;
+    font-size: 1em;
+    font-family: $font-family;
+    padding: 5px;
+
+}

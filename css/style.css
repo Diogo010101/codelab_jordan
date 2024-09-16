@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Archivo", sans-serif;
+}
+
+main .produtos, .header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container {
+  height: auto;
+  width: 100%;
+  color: white;
+}
+.header-container .header-title {
+  color: #121214;
+  font-family: "Archivo", sans-serif;
+  font-size: 2.5vh;
+  margin: 10px 0px;
+}
+
+.banner-header-container {
+  width: 100%;
+  height: 100%;
+}
+.banner-header-container .banner-jordan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+  max-height: 45vh;
+  background-image: url("../image/image-michael-jordan.png");
+  background-size: 190%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: 1s;
+  text-align: left;
+}
+.banner-header-container .banner-jordan img {
+  position: relative;
+  bottom: 30px;
+  width: 10em;
+  padding: 10px;
+  margin-left: 20px;
+}
+.banner-header-container .banner-jordan h1 {
+  font-size: 1.4em;
+  padding: 5px;
+  margin-left: 20px;
+  font-weight: 400;
+}
+.banner-header-container .banner-jordan p {
+  font-size: 1em;
+  padding: 5px;
+  margin-left: 20px;
+  line-height: 25px;
+}
+@media screen and (min-width: 1100px) {
+  .banner-header-container .banner-jordan {
+    width: 100%;
+    height: 800px;
+    max-height: 49vh;
+    background-image: url("../image/image-michael-jordan.png");
+    background-size: 100%;
+    background-position: center top 2px;
+    transition: 1s;
+  }
+  .banner-header-container .banner-jordan .content-header {
+    width: 600px;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  .banner-header-container .banner-jordan img {
+    position: relative;
+    bottom: 30px;
+    width: 15em;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  .banner-header-container .banner-jordan h1 {
+    font-size: 3.4em;
+    padding: 5px;
+    margin-left: 20px;
+    font-weight: 400;
+  }
+  .banner-header-container .banner-jordan p {
+    font-size: 1.5em;
+    padding: 5px;
+    margin-left: 20px;
+    line-height: 25px;
+  }
+}
+
+.content-header {
+  position: relative;
+  bottom: 5px;
+  width: 80%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: black;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+main .apresentacao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+main .produtos .produto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main .produtos .produto img {
+  width: 50%;
+  background-color: #f3f7ff;
+}
+main .produtos p {
+  color: #7ca2f4;
+}
+main .produtos span {
+  font-weight: bold;
+}
+main .produtos {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .produtos .produto {
+  width: 50%;
+}
+@media screen and (min-width: 1100px) {
+  main .apresentacao {
+    gap: 40px;
+  }
+  main .apresentacao h1 {
+    font-size: 2em;
+  }
+  main .apresentacao p {
+    padding: 5px;
+    font-size: 1.6em;
+    width: 35%;
+    align-self: center;
+  }
+  main .produtos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .produtos .produto {
+    width: 33%;
+  }
+}
+main .descri-produto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0px 0px 0px;
+  background-color: #121214;
+  color: #ffffff;
+  height: 40px;
+  font-size: 1em;
+  font-family: "Archivo", sans-serif;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
